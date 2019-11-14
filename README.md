@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # travel
 
 ## Project setup
@@ -27,3 +28,6 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+=======
+# Travel
+>>>>>>> 6d068779ea36ad521897e0d5b1c81eb307aa56cd

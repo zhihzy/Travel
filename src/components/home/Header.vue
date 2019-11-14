@@ -21,38 +21,36 @@
         }
     }
 </script>
-<style scoped>
+<style lang="scss" scoped>
+    $teavel-color:#00bcd4;
     .header {
         display: flex;
-        background: #00bcd4;
+        background: $teavel-color;
         color: #fff;
         line-height: 2.4rem;
-    }
-    
-    .header-left {
-        width: 2rem;
-        float: left;
-        margin-left: .22rem;
-    }
-    
-    .header-input {
-        flex: 1;
-        height: 1.77rem;
-        margin-top: .32rem;
-        padding-left: .42rem;
-        margin-bottom: .32rem;
-        background: #fff;
-        border-radius: .3rem;
-        color: #ccc;
-        line-height: 1.7rem;
-        font-size: .8rem;
-    }
-    
-    .header-right {
-        padding: 0 .53rem;
-        float: right;
-        text-align: center;
-        color: #fff;
-        text-decoration: none;
+        .header-left {
+            width: 2rem;
+            float: left;
+            margin-left: .22rem;
+        }
+        .header-input {
+            flex: 1;
+            height: 1.77rem;
+            margin-top: .32rem;
+            padding-left: .42rem;
+            margin-bottom: .32rem;
+            background: #fff;
+            border-radius: .3rem;
+            color: #ccc;
+            line-height: 1.7rem;
+            font-size: .8rem;
+        }
+        .header-right {
+            padding: 0 .53rem;
+            float: right;
+            text-align: center;
+            color: #fff;
+            text-decoration: none;
+        }
     }
 </style>

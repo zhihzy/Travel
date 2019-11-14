@@ -9,13 +9,8 @@
         name: 'cityHeader'
     }
 </script>
-<style scoped>
-    .header-back {
-        position: absolute;
-        left: .4rem;
-        color: #fff;
-        text-decoration: none;
-    }
+<style lang="scss" scoped>
+    
     
     .header {
         overflow: hidden;
@@ -24,5 +19,11 @@
         color: #fff;
         text-align: center;
         line-height: 2rem;
+        .header-back {
+            position: absolute;
+            left: .4rem;
+            color: #fff;
+            text-decoration: none;
+        }
     }
 </style>

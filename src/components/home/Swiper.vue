@@ -45,6 +45,10 @@
     }
     
     .swiper>>>.swiper-pagination-bullet-active {
-        background: #eee !important;
+        background: #fff !important;
+    }
+    .swiper>>>.swiper-pagination-bullet {
+        width: 6px;
+        height: 6px;
     }
 </style>

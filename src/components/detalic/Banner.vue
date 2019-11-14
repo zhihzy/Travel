@@ -11,8 +11,8 @@
         name: "banner"
     }
 </script>
-<style scoped>
-    .banner-img> {
+<style lang="scss" scoped>
+    .banner-img {
         overflow: hidden;
         height: 0;
         top: 0;
@@ -21,11 +21,7 @@
         position: relative;
         padding-bottom: 55%;
     }
-    
-    span {
-        position: absolute;
-    }
-    
+
     .banner-img>img {
         width: 100%;
         position: absolute;

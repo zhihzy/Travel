@@ -65,7 +65,7 @@
         }
     }
 </script>
-<style scoped>
+<style lang="scss" scoped>
     .list {
         display: flex;
         flex-direction: column;
@@ -81,11 +81,10 @@
         margin: 0;
         padding: 0;
         z-index: 999;
-    }
-    
-    .list li {
-        text-align: center;
-        font-size: .33rem;
-        line-height: 1.4rem;
+        li {
+            text-align: center;
+            font-size: .33rem;
+            line-height: 1.4rem;
+        }
     }
 </style>

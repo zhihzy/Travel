@@ -1,8 +1,8 @@
 <template>
         <div class="header">
-            <span class="iconfont header-left" >&#xe601;</span>
-            <div class="header-input"><span class="iconfont">&#xe621;</span>请输入城市</div>
-            <router-link to="city" class="header-right">{{sliceCity}}<span class="iconfont">&#xe600;</span></router-link>
+            <span class="iconfont header-left" >&#xe605;</span>
+            <div class="header-input"><span class="iconfont">&#xe6b1;</span>请输入城市</div>
+            <router-link to="city" class="header-right">{{sliceCity}}<span class="iconfont">&#xe66a;</span></router-link>
         </div>
     </template>
 <script>

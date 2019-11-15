@@ -23,7 +23,7 @@
             return {
                 swiperOption: {
                     pagination: '.swiper-pagiation',
-                    autoplay: false
+                    autoplay: false,
                 },
             }
         },

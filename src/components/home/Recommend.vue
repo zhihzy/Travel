@@ -5,7 +5,7 @@
         <ul class="recommend-ul">
             <!-- <img class="top-img" v-for="i of topIcon" :key="i" :src="i" /> -->
             <li class="item" v-for="(i,k) of hotList" :key="k">
-            <router-link :to="/detalic/+11" >
+            <router-link :to="'/detalic/'+i.id" >
                 <div class="item-img">
                     <img :src="i.imgUrl" />
                 </div>
@@ -154,7 +154,7 @@
                 }
                 .span {
                     position: absolute;
-                    bottom: .22rem;
+                    bottom: .6rem;
                     right: .22rem;
                 }
             }

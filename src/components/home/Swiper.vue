@@ -19,7 +19,8 @@
                 swiperOption: {
                     pagination: '.swiper-pagiation',
                     loop: true,
-                    autoplay: 3000
+                    autoplay: 3000,
+                    speed: 800
                 },
             }
         }

@@ -1,6 +1,8 @@
 <template>
   <div id="app">
-    <router-view/>
+    <keep-alaive>
+        <router-view/>
+    </keep-alaive>
   </div>
 </template>
 

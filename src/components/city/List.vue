@@ -3,7 +3,7 @@
         <div>
             <div class="area">
                 <div class="title">当前城市</div>
-                <a class="city">{{city}}</a>
+                <a class="city" @click="_cityClick(city)">{{city}}</a>
             </div>
             <div class="area">
                 <div class="title">热门城市</div>
@@ -37,7 +37,7 @@
         },
         computed: {
             city() {
-                return localStorage.city
+                return localStorage.city==undefined?this.$store.state.city:localStorage.city
             }
         },
         watch: {

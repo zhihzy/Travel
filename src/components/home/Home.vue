@@ -41,6 +41,7 @@
                 this.topIcon = res.data.data.topIcon
                 this.itemList = res.data.data.itemList
                 this.weekendList = res.data.data.weekendList
+                // window.console.log(this.hotList)
             }
         },
         mounted() {

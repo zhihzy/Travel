@@ -1,15 +1,17 @@
 <template>
   <div id="app">
-    <keep-alaive>
-        <router-view/>
-    </keep-alaive>
+    <router-view/>
   </div>
 </template>
 
 <script>
     export default {
         name: 'app',
-
+        data(){
+            return{
+                exclude:['Detail','HomeHeader']
+            }
+        }
     }
 </script>
 

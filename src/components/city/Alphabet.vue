@@ -1,7 +1,6 @@
 <template>
     <ul class="list">
         <li v-for="(i,k) of cityList" :key="k"
-        @touchstart="handleTouchStart"
         @touchmove="handleTouchMove"
         @touchend="handleTouchEnd"
         @click="handleLetterClick"
@@ -38,11 +37,6 @@
         methods: {
             handleLetterClick(e) {
                 this.$emit('change', e.target.innerText)
-                    // console.log(1)
-            },
-            handleTouchStart() {
-                // console.log('开始滑动')
-                this.touchStatus = true
             },
             handleTouchMove(e) {
                 if (this.touchStatus) {
@@ -50,9 +44,8 @@
                         clearTimeout(this.timeer)
                     }
                     this.timeer = setTimeout(() => {
-                        // console.log(e.touches)
-                        const touchY = e.touches.clientY - 40 // 手指触摸当前位置距离视口顶部的距离减去40（40指滚动区域最上边和页面顶部之间的距离）
-                        const index = Math.floor((touchY - this.startY) / 26) // 手指触摸当前位置所在的字母索引（26指单个字母的高度）
+                        const touchY = e.touches.clientY - 40 
+                        const index = Math.floor((touchY - this.startY) / 26) 
                         if (index >= 0 && index < this.letters.length) {
                             this.$emit('change', this.letters[index])
                         }

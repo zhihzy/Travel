@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div class="container" @click="_click">
       <div class="wrapper">
         <swiper :options="swiperOptions">
           <swiper-slide v-for="(i,k) of gallaryImgs" :key="k">
@@ -21,8 +21,15 @@ export default {
     return {
       swiperOptions: {
         pagination: '.swiper-pagination',
-        paginationType: 'fraction'
+        paginationType: 'fraction',
+        observer: true,
+        observeParents: true
       }
+    }
+  },
+  methods:{
+    _click(){
+      this.$emit('close')
     }
   }
 }

@@ -2,7 +2,7 @@
     <div class="banner">
         <div>
             <img class="banner-img" 
-            @click="_showGallary"
+            @click="_click"
             v-show="!showGallary"
             :src="bannerImg"/>
         </div>
@@ -15,14 +15,17 @@
             </div>
             <p class="banner-title">{{sightName}}</p>
         </div>
-        <commer-gallary 
-        @click="_showGallary"
-        v-show="showGallary"
-        :gallaryImgs="gallaryImgs" />
+        <fade>
+            <commer-gallary 
+            @close="_close"
+            v-show="showGallary"
+            :gallaryImgs="gallaryImgs" />
+        </fade>
     </div>
 </template>
 <script>
     import CommerGallary from './CommerGallary'
+    import Fade from './Fade'
     export default {
         name: "Banner",
         props:{
@@ -31,7 +34,8 @@
             gallaryImgs:Array
         },
         components:{
-            CommerGallary
+            CommerGallary,
+            Fade
         },
         data(){
             return{
@@ -39,12 +43,11 @@
             }
         },
         methods:{
-            _showGallary(){
-                if(this.showGallary==false){
-                    this.showGallary=true
-                }else{
-                    this.showGallary=false
-                }
+            _click(){
+                this.showGallary=true
+            },
+            _close(){
+                this.showGallary=false
             }
         }
     }

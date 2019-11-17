@@ -136,7 +136,7 @@
         border-bottom: 1px solid #eee;
         margin-bottom: .53rem;
         .div-info {
-            width: 66%;
+            width: 100%;
             padding-left: .62rem;
             .info-title {
                 margin-top: .6rem;
@@ -155,7 +155,7 @@
                 .span {
                     position: absolute;
                     bottom: .6rem;
-                    right: .22rem;
+                    right: .82rem;
                 }
             }
         }

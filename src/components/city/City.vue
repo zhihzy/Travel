@@ -1,5 +1,8 @@
 <template>
     <div>
+        <div class="word" v-show="showWord">
+            <span>{{letter}}</span>
+        </div>
         <city-header/>
         <search :cityList="cityList" />
         <list :letter="letter" :cityList="cityList" :hotCities="hotCities" />
@@ -17,7 +20,8 @@
             return {
                 hotCities: [],
                 cityList: {},
-                letter: ''
+                letter: '',
+                showWord: false
             }
         },
         components: {
@@ -37,6 +41,10 @@
             },
             _letterChange(letter) {
                 this.letter = letter
+                this.showWord = true
+                setTimeout(() => {
+                    this.showWord = false
+                }, 500)
             }
         },
         mounted() {
@@ -45,5 +53,22 @@
     }
 </script>
 <style scoped>
-
+.word{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 9;
+}
+.word span {
+    width: 3rem;
+    height: 3rem;
+    border-radius: .3rem;
+    display: inline-block;
+    background: rgba(0, 0, 0, .3);
+    display: flex;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+}
 </style>

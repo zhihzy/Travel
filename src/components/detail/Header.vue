@@ -23,7 +23,7 @@ export default {
         _scroll(){
             const top=document.documentElement.scrollTop
             if(top>20){
-                let opacity=top/140
+                let opacity=top/200
                 opacity=opacity>1?1:opacity
                 this.opacityStyle={opacity}
                 this.show=false

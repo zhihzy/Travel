@@ -13,7 +13,7 @@
         },
         computed: {
             sliceCity() {
-                return localStorage.city.slice(0, 4) || this.$store.state.city
+                return localStorage.city.slice(0,4)==undefined?this.$store.state.city:localStorage.city.slice(0,4)
             }
         },
         methods: {

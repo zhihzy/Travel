@@ -3,6 +3,7 @@
         <keep-alive><banner-header/></keep-alive>
         <banner :gallaryImgs="gallaryImgs" :sightName="sightName" :bannerImg="bannerImg" />
         <detail-list :categoryList="categoryList" />
+        <div class="d1"></div>
     </div>
 </template>
 <script>
@@ -27,7 +28,9 @@
         },
         methods:{
             getDetail(){
-                Axios.get('mock/detail.json').then(this.getDetailSucc)
+                Axios.get('mock/detail.json',{
+                    params:{id:this.$route.params.id}
+                }).then(this.getDetailSucc)
             },
             getDetailSucc(res){
                 this.categoryList=res.data.data.categoryList
@@ -42,5 +45,7 @@
     }
 </script>
 <style scoped>
-
+.d1{
+    height: 222rem;
+}
 </style>

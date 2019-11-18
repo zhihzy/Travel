@@ -3,9 +3,8 @@
         <div class="title"><img class="title-img" src="http://img1.qunarzz.com/piao/fusion/1711/16/bfbb9874e8f11402.png" alt="热门榜单"/>
             热门榜单</div>
         <ul class="recommend-ul">
-            <!-- <img class="top-img" v-for="i of topIcon" :key="i" :src="i" /> -->
             <li class="item" v-for="(i,k) of hotList" :key="k">
-            <router-link :to="'/detalic/'+i.id" >
+            <router-link :to="'/detalic/'+i.id">
                 <div class="item-img">
                     <img :src="i.imgUrl" />
                 </div>
@@ -16,7 +15,11 @@
         </ul>
         <div class="title"><img class="title-img" src="http://img1.qunarzz.com/piao/fusion/1711/89/ebc329f16c55bb02.png" alt="猜你喜欢"/>
             猜你喜欢</div>
-        <div class="recommend-div" v-for="(i,k) of itemList" :key="k">
+        <router-link 
+            :to="'/detalic/'+i.id" 
+            class="recommend-div" 
+            v-for="(i,k) of itemList" 
+            :key="k">
             <div class="item-img"><img :src="i.imgUrl"/></div>
             <div class="div-info">
                 <p class="info-title">{{i.title}}</p>
@@ -24,7 +27,7 @@
                     <span>{{i.comment_num}}条评论</span></p>
                 <div class="info-price"><p class="¥">¥{{i.price}}<span>起</span></p><span class="span">{{i.address}}</span></div>
             </div>
-        </div>
+        </router-link>
         <div class="item-probuct">
             <div class="title">&nbsp;
                 周末去哪</div>
@@ -55,12 +58,7 @@
     }
 </script>
 <style lang="scss" scoped>
-    /* .top-img {
-        width: 2.625rem;
-        height: 1.25rem;
-        z-index: 1;
-    } */
-    
+
     .item-probuct{
         .item-probuct-img{
             img{

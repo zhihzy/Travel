@@ -5,12 +5,15 @@
         </router-link>
         <div class="mp-header" v-show="!show" :style="opacityStyle">
             <router-link to="/" class="iconfont header-back" >&#xe605;</router-link>
-            东部华侨城大峡谷
+            {{headerName}}
         </div>
     </div>
 </template>
 <script>
 export default {
+    props:{
+        headerName:String
+    },
     data(){
         return{
             show:true,
@@ -37,7 +40,7 @@ export default {
     },
     deactivated(){
         window.removeEventListener('scroll',this._scroll)
-    }
+    },
 }
 </script>
 <style lang="scss" scoped>

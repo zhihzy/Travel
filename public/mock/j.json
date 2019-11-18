@@ -1,0 +1,9 @@
+{
+    "ret": true,
+    "data": {
+        "lid": "1",
+        "sightName": "世界之窗(AAAA景区)",
+        "bannerImg": "http://img1.qunarzz.com/sight/p0/1902/f2/f2e0213052717f7ca3.water.jpg_600x330_29ac7bfd.jpg",
+        "gallaryImgs": ["http://img1.qunarzz.com/sight/p0/1902/f2/f2e0213052717f7ca3.water.jpg_350x240_1930a090.jpg", "http://img1.qunarzz.com/sight/p0/1905/ba/ba5e7d1d609e56f6a3.img.jpg_350x240_34bffadd.jpg"]
+    }
+}

@@ -1,25 +1,184 @@
 {
     "ret": true,
-    "data": {
+    "data": [{
+        "lid": "1",
+        "headerName": "世界之窗",
         "sightName": "世界之窗(AAAA景区)",
         "bannerImg": "http://img1.qunarzz.com/sight/p0/1902/f2/f2e0213052717f7ca3.water.jpg_600x330_29ac7bfd.jpg",
-        "gallaryImgs": ["http://img1.qunarzz.com/sight/p0/1902/f2/f2e0213052717f7ca3.water.jpg_350x240_1930a090.jpg", "http://img1.qunarzz.com/sight/p0/1905/ba/ba5e7d1d609e56f6a3.img.jpg_350x240_34bffadd.jpg"],
+        "gallaryImgs": ["http://img1.qunarzz.com/sight/p0/1905/ba/ba5e7d1d609e56f6a3.img.jpg_350x240_34bffadd.jpg", "http://img1.qunarzz.com/sight/p0/1412/2e/6b6da71a85d9eacbced992e8b9de265e.water.jpg_350x240_17662131.jpg", "http://img1.qunarzz.com/sight/p0/1902/f8/f855cec6c668dc6da3.water.jpg_350x240_f9ff6f4e.jpg"],
         "categoryList": [{
             "title": "成人票",
             "children": [{
-                "title": "成人三馆联票",
-                "children": [{
-                    "title": "成人三馆联票 - 某一连锁店销售"
-                }]
+                "title": "日夜场通玩票",
+                "price": "¥89.9"
             }, {
-                "title": "成人五馆联票"
+                "title": "日夜场通玩票(持港澳通行证专享)",
+                "price": "¥200"
             }]
         }, {
-            "title": "学生票"
+            "title": "冰雪世界",
+            "children": [{
+                "title": "滑雪票",
+                "price": "¥45"
+            }, {
+                "title": "套票(滑雪+嬉雪+冰雕园)",
+                "price": "¥68"
+            }]
         }, {
-            "title": "儿童票"
-        }, {
-            "title": "特惠票"
+            "title": "旅行跟拍",
+            "children": [{
+                "title": "深圳旅行跟拍2小时",
+                "price": "¥399"
+            }, {
+                "title": "深圳旅行跟拍3小时",
+                "price": "¥549"
+            }]
         }]
-    }
+    }, {
+        "lid": "2",
+        "headerName": "深圳欢乐谷",
+        "sightName": "深圳欢乐谷(AAAAA景区)",
+        "bannerImg": "http://img1.qunarzz.com/sight/p0/1911/6c/6c31c4988aade7aba3.water.jpg_600x330_e0f7b24e.jpg",
+        "gallaryImgs": ["http://img1.qunarzz.com/sight/p0/1503/8a/8a7e5224749d88a2.water.jpg_350x240_865063a9.jpg", "http://img1.qunarzz.com/sight/p0/201310/28/d8d53a76ddb582b6c8d65eac.jpg_350x240_351d5fb2.jpg", "http://img1.qunarzz.com/sight/p0/1911/27/27201534ebd9432ba3.water.jpg_350x240_6704d63b.jpg"],
+        "categoryList": [{
+            "title": "万圣潮玩节",
+            "children": [{
+                "title": "潮玩节夜场票",
+                "price": "¥85"
+            }]
+        }, {
+            "title": "日夜场通玩票",
+            "children": [{
+                "title": "[提前1天预定]成人票",
+                "price": "¥99"
+            }, {
+                "title": "[随买随用]成人票",
+                "price": "¥225.8"
+            }]
+        }, {
+            "title": "团队票",
+            "children": [{
+                "title": "深圳欢乐谷全天门票儿童票",
+                "price": "¥75"
+            }, {
+                "title": "学生团队票",
+                "price": "¥130"
+            }]
+        }]
+    }, {
+        "lid": "3",
+        "headerName": "东部华侨城大峡谷",
+        "sightName": "东部华侨城大峡谷",
+        "bannerImg": "http://img1.qunarzz.com/sight/p0/201301/16/4593d3d5a27f445b93835fbb.jpg_600x330_a93d04ea.jpg",
+        "gallaryImgs": ["http://img1.qunarzz.com/sight/p0/1502/56/566f8cf1f0d6214c.water.jpg_350x240_4e7dcc22.jpg", "http://img1.qunarzz.com/sight/p0/1502/f7/f7d60ec7c9af477f.water.jpg_350x240_e4f179e1.jpg", "http://img1.qunarzz.com/sight/p0/1502/91/91b45435e2150822.water.jpg_350x240_c067ff7d.jpg"],
+        "categoryList": [{
+            "title": "万圣潮玩节",
+            "children": [{
+                "title": "潮玩节夜场票",
+                "price": "¥85"
+            }]
+        }, {
+            "title": "日夜场通玩票",
+            "children": [{
+                "title": "[提前1天预定]成人票",
+                "price": "¥99"
+            }, {
+                "title": "[随买随用]成人票",
+                "price": "¥225.8"
+            }]
+        }, {
+            "title": "团队票",
+            "children": [{
+                "title": "深圳欢乐谷全天门票儿童票",
+                "price": "¥75"
+            }, {
+                "title": "学生团队票",
+                "price": "¥130"
+            }]
+        }]
+    }, {
+        "lid": "4",
+        "headerName": "锦绣中华民俗村",
+        "sightName": "锦绣中华民俗村(AAAAA景区)",
+        "bannerImg": "http://img1.qunarzz.com/sight/p0/1603/9d/9d8c0e9a01bba92e90.water.jpg_600x330_18d5b736.jpg",
+        "gallaryImgs": ["http://img1.qunarzz.com/sight/p0/201403/04/abf9d2133fbfc65ac5d7d15eebebd374.jpg_350x240_27acb012.jpg", "http://img1.qunarzz.com/sight/p0/201309/24/8c7ab1eb72c5f689c8d65eac.jpg_350x240_53ea95c4.jpg", "http://img1.qunarzz.com/sight/p0/1412/ad/267e975f9b884eb66e6518cdd0838663.water.jpg_350x240_1f70a709.jpg"],
+        "categoryList": [{
+            "title": "活动票",
+            "children": [{
+                "title": "[周年促销]锦绣中华民俗村老人年卡",
+                "price": "¥149"
+            }]
+        }, {
+            "title": "夜场门票",
+            "children": [{
+                "title": "夜场票",
+                "price": "¥64.5"
+            }]
+        }, {
+            "title": "全天门票",
+            "children": [{
+                "title": "成人票",
+                "price": "¥208"
+            }]
+        }]
+    }, {
+        "lid": "5",
+        "headerName": "东部华侨城",
+        "sightName": "东部华侨城(AAAA景区)",
+        "bannerImg": "http://img1.qunarzz.com/sight/p0/1707/61/61351de35d20c249a3.water.jpg_600x330_c220916e.jpg",
+        "gallaryImgs": ["http://img1.qunarzz.com/sight/p0/1611/97/97dbde6eccdfef72a3.water.jpg_350x240_21595fb3.jpg", "http://img1.qunarzz.com/sight/p0/1505/f9/f9703e976a1a8aff.water.jpg_350x240_500b0d5c.jpg", "http://img1.qunarzz.com/sight/p0/1505/ab/ab032b088d0bc01f.water.jpg_350x240_e5c8a81e.jpg"],
+        "categoryList": [{
+            "title": "大峡谷",
+            "children": [{
+                "title": "[提前1天预定]成人票",
+                "price": "¥180"
+            }, {
+                "title": "[当天可定]成人票",
+                "price": "¥174"
+            }]
+        }, {
+            "title": "年卡",
+            "children": [{
+                "title": "大峡谷年卡",
+                "price": "¥718"
+            }, {
+                "title": "[续卡专享]大峡谷年卡",
+                "price": "¥212.8"
+            }]
+        }, {
+            "title": "电子导游",
+            "children": [{
+                "title": "东部华侨城手机电子导游讲解",
+                "price": "¥10"
+            }]
+        }]
+    }, {
+        "lid": "6",
+        "headerName": "小梅沙海洋世界",
+        "sightName": "小梅沙海洋世界",
+        "bannerImg": "http://img1.qunarzz.com/sight/p0/1507/64/34362835b4a219af8b36803d31a6380f.water.jpg_600x330_4ae7abf5.jpg",
+        "gallaryImgs": ["http://img1.qunarzz.com/sight/p0/201301/05/daf2f35b37f7c07693835fbb.png_350x240_677d6939.png", "http://img1.qunarzz.com/sight/p0/201301/05/4487433de3574f7f93835fbb.png_350x240_1423b4dc.png", "http://img1.qunarzz.com/sight/p0/1412/91/a37bcb867d07065abdc8b0d139e627b4.water.jpg_350x240_e6c8fe91.jpg"],
+        "categoryList": [{
+            "title": "门票",
+            "children": [{
+                "title": "成人票",
+                "price": "¥144.5"
+            }]
+        }, {
+            "title": "年卡",
+            "children": [{
+                "title": "成人年卡",
+                "price": "¥380"
+            }, {
+                "title": "亲子年卡",
+                "price": "¥540"
+            }]
+        }, {
+            "title": "电子导游",
+            "children": [{
+                "title": "深圳小梅沙海洋世界景区手机电子导游(不含门票)",
+                "price": "¥6"
+            }]
+        }]
+    }]
 }

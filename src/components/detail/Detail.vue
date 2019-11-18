@@ -1,6 +1,6 @@
 <template>
     <div>
-        <keep-alive><banner-header/></keep-alive>
+        <keep-alive><banner-header :headerName="headerName"/></keep-alive>
         <banner :gallaryImgs="gallaryImgs" :sightName="sightName" :bannerImg="bannerImg" />
         <detail-list :categoryList="categoryList" />
         <div class="d1"></div>
@@ -23,24 +23,31 @@
                 categoryList:[],
                 gallaryImgs:[],
                 sightName:'',
-                bannerImg:''
+                bannerImg:'',
+                headerName:'',
+                lid:''
             }
         },
         methods:{
+            getLid(){
+                this.lid=this.$route.params.id
+            },
             getDetail(){
                 Axios.get('mock/detail.json',{
                     params:{id:this.$route.params.id}
                 }).then(this.getDetailSucc)
             },
             getDetailSucc(res){
-                this.categoryList=res.data.data.categoryList
-                this.bannerImg=res.data.data.bannerImg
-                this.gallaryImgs=res.data.data.gallaryImgs
-                this.sightName=res.data.data.sightName
+                this.categoryList=res.data.data[this.lid-1].categoryList
+                this.bannerImg=res.data.data[this.lid-1].bannerImg
+                this.gallaryImgs=res.data.data[this.lid-1].gallaryImgs
+                this.sightName=res.data.data[this.lid-1].sightName
+                this.headerName=res.data.data[this.lid-1].headerName
             }
         },
         mounted(){
            this.getDetail()
+           this.getLid()
         }
     }
 </script>

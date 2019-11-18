@@ -10,7 +10,7 @@
             <div class="banner-imgNumber">
                 <div class="bg-imgNumber">
                     <span class="iconfont">&#xe623;</span>
-                    <em>15</em>
+                    <em>3</em>
                 </div>
             </div>
             <p class="banner-title">{{sightName}}</p>

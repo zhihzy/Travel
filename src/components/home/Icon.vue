@@ -71,7 +71,7 @@
     
     .icons {
         overflow: hidden;
-        padding-bottom: 50%;
+        padding-bottom: 11.6rem;
         height: 0;
     }
     
@@ -80,7 +80,7 @@
         overflow: hidden;
         float: left;
         width: 25%;
-        padding-bottom: 23%;
+        padding-bottom: 5.4rem;
     }
     
     .icon-p {

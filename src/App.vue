@@ -9,9 +9,8 @@
         name: 'app',
         data(){
             return{
-                exclude:['Detail','HomeHeader']
             }
-        }
+        },
     }
 </script>
 
